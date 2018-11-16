@@ -38,7 +38,7 @@
     "coverage": "node ./node_modules/istanbul/lib/cli.js cover _mocha -- --full-trace ./dist/test/tests.js",
     "postcoverage": "remap-istanbul --input coverage/coverage.raw.json --type lcovonly --output coverage/lcov.info",
     "prepublishOnly": "npm run test",
-    "preinstall": "npm run compile"
+    "preinstall": "npm install && npm run compile"
   },
   "dependencies": {
     "iterall": "^1.1.3"
